@@ -1,0 +1,61 @@
+rect {
+  fill: white;
+  stroke: #999;
+  shape-rendering: crispEdges;
+}
+
+.selection {
+  fill: none;
+  stroke: rgb(158, 55, 255);
+  stroke-width: 3px;
+}
+.col-header {
+  fill: #eee;
+}
+.col-header__resize {
+  cursor: col-resize;
+  opacity: 0;
+}
+.col-header__resize:hover {
+  cursor: col-resize;
+  fill: rgb(158, 55, 255);
+  opacity: 0.5;
+}
+.col-header__resize.active {
+  fill: rgb(158, 55, 255);
+  opacity: 0.5;
+}
+
+.grid {
+  position: relative;
+  background: #eee;
+  width: 100%;
+}
+.editor__frame {
+  position: absolute;
+  overflow: hidden;
+}
+
+text {
+  dominant-baseline: central;
+  user-select: none;
+}
+
+input {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  margin-left: 2px;
+}
+
+svg {
+  display: block;
+}
+
+.editor__textarea {
+  opacity: 0;
+  width: 100%;
+}
+.editor--visible {
+  opacity: 1;
+}
